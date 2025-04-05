@@ -1,12 +1,21 @@
 #ifndef FUNCTION_H
 #define FUNCTION_H
 
-void add(float a, float b);
-void subtract(float a, float b);
-void multiply(float a, float b);
-void divide(float a, float b);
-void int_divide(float a, float b);
+#include <pthread.h>
 
-void execute(void (*func)(float, float), float a, float b);
+void* add(void* args);
+void* subtract(void* args);
+void* multiply(void* args);
+void* divide(void* args);
+void* int_divide(void* args);
+
+typedef struct {
+    float a;
+    float b;
+    int thread_num;
+} ThreadArgs;
+
+extern int counter;
+extern pthread_mutex_t counter_mutex;
 
 #endif

@@ -1,5 +1,5 @@
 CC = gcc
-CFLAGS = -Wall
+CFLAGS = -Wall -pthread
 TARGET = program
 OBJ = main.o functions.o
 
