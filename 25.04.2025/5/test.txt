@@ -1,0 +1,5 @@
+Hello, this is a test file for text analysis.
+It contains various letters and words.
+The program will count how many times each letter appears.
+This is a simple example to demonstrate the functionality.
+We can add more text here to get better statistics. 
